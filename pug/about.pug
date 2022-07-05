@@ -1,0 +1,60 @@
+doctype html
+html(lang="en" dir  = "ltr")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="about")
+        title Document
+        link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+        link(rel="stylesheet", href="./icomoon/style.css")
+        <link rel="shortcut icon" href="#">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        link(rel="stylesheet" href="./css/index.css")
+        link(rel="stylesheet" href="./dist/output.css")
+        link(rel="shortcut icon", href="./img/cirta-care-01footer.webp", type="image/x-icon")
+    body(style  = "overflow-x: hidden;" class ="bg-[#edf3f1]") 
+        include ./compounent/loead.pug
+        include ./compounent/nav.pug
+        include ./compounent/cover.pug
+        section(class ="" wire:id='FuIx3NLrlETdwirrBmc9')
+            .section.mx-auto.bg-white.p-2.shadow-lg(class='rounded-[1.75rem]  w-[890px] aboutUs mt-16 mx-auto maxmd:w-full md:p-5')
+                .grid.grid-cols-1(class='sm:grid-cols-2 md:grid-cols-2')
+                    .col-span-1.aos-init.mb-5(data-aos='fade-up' data-aos-duration='1500')
+                        img.about-pic.opacity-0.translate-y-6.rounded-xl.transition-all.duration-2000.mx-auto(class='md:w-80 md:h-80' src='https://cirtacare.com/cirtacare/public/storage/53/academy4.jpg' alt='dental edit' loading='lazy')
+                    .col-span-1.mt-2
+                        div(class='rtl:space-x-reverse flex items-center space-x-2')
+                            img.w-1(src='https://cirtacare.com/website/images/home/Rectangle 6.svg' alt='rectangle' loading='lazy')
+                            h1.capitalize.font-semibold.text-xl
+                                | About Us
+                        div(class ="text-about opacity-0 translate-y-6 transition-all duration-2000" data-aos='fade-up' data-aos-duration='1500')
+                            p &nbsp;
+                            h1
+                                span(style='font-size:36px')
+                                    strong CIRTA CARE
+                            h1
+                                span(style='font-size:18px')
+                                    | the medical partner in turkey with a years of experience in helping patients who&apos;s travelling for their dental, medical and aesthetic treatment .With our highly experienced team we offer the best possible treatment options with affordable prices,We are committed to medical excellence, ensuring only the very best materials are sourced from across the world.Together with our committed and highly experienced Doctors, Dentists, Surgeons and Clinic Coordinators your visit with us will be a comfortable and unforgettable experience.
+                            p &nbsp;
+                            p &nbsp;
+                            p &nbsp;
+                        a.capitalize.mt-4.text-white.font-semibold.rounded-full.p-2.pl-3.pr-3(href='/contact' style='display: inline-block;' class='bg-[#149ada]') Contact us
+
+            include ./compounent/videos.pug
+            include ./compounent/contact.pug
+            include ./compounent/footer.pug
+            include ./compounent/abov.pug
+
+
+
+
+            script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js") 
+            script(src = "./js/swiper.js")
+            script(src="./js/loead.js") 
+            script(src="./js/public.js") 
+            script(src="./js/animation.js")
+
+

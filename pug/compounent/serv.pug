@@ -1,0 +1,78 @@
+.services
+    .container
+        .flex.items-center.space-x-3.mt-20(class='rtl:space-x-reverse')
+            h1.w-10.rounded-xl(class='bg-[#44a883] h-1.5')
+            h1.capitalize.font-semibold.text-xl
+                | Services
+        .grid.grid-cols-1(class='sm:grid-cols-2 md:grid-cols-4 md:space-x-10 rtl:space-x-reverse')
+            div(class = "col-span-1 ")
+                .hidden.mt-6(class='md:block md:mt-12 sticky top-24')
+                    a.flex.items-center.justify-center.space-x-3.bg-white.font-bold.capitalize.w-64.h-14.rounded-full(href='https://cirtacare.com/service/1' class='rtl:space-x-reverse ltr:pl-3 rtl:pr-3 hover:shadow-xl hover:ltr:ml-3 hover:rtl:mr-3')
+                        | Dental
+                    br
+                    a.flex.items-center.justify-center.space-x-3.bg-white.font-bold.capitalize.w-64.h-14.rounded-full(href='https://cirtacare.com/service/2' class='rtl:space-x-reverse ltr:pl-3 rtl:pr-3 hover:shadow-xl hover:ltr:ml-3 hover:rtl:mr-3')
+                        | Plastic Surgery
+                    br
+                    a.flex.items-center.justify-center.space-x-3.bg-white.font-bold.capitalize.w-64.h-14.rounded-full(href='https://cirtacare.com/service/3' class='rtl:space-x-reverse ltr:pl-3 rtl:pr-3 hover:shadow-xl hover:ltr:ml-3 hover:rtl:mr-3')
+                        | Hair Transplant
+                    br
+                .custom-select(class ="my-5 hidden maxmd:block w-[200px] maxmd:w-full" style='')
+                    select(class ="select-service  p-2 text-gray-400 bg-white hover:text-[#149ada] my-3 w-full outline-none border-none   ")
+                        option(class ="bg-[#149ada] text-white hover:bg-white hover:text-black p-2" value='https://www.google.com/') Audi
+                        option(class ="bg-[#149ada] text-white hover:bg-white hover:text-black p-2" value='https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Frecover') BMW
+                        option(class ="bg-[#149ada] text-white hover:bg-white hover:text-black p-2" value='www.yahoo.com') Citroen
+
+
+            .col-span-3
+                h1.font-bold.text-2xl.uppercase.mt-6(class='md:text-4xl md:mt-9') Dental
+                img.imgServ.mt-7(class='md:h-96' src='https://cirtacare.com/cirtacare/public/storage/125/Dental.jpg' alt='service image' loading='lazy')
+                h1.font-meduim.text-sm.capitalize.mt-7 Our Dental Treatment:
+                h1
+                div(class ="col-span-2 md:max-w-[75%] all-text-cards")
+                    strong
+                        span(style='font-family:Georgia,serif ') Dental Implants :
+                    p
+                    span(style='font-family:Georgia,serif ')
+                        img(alt='Dental Implants' src='./img/6546464.webp' style='height:350px; width:350px')
+                    p
+                    span(style='font-family:Georgia,serif ')
+                        | Dental implants are one of the highly demanded dental cosmetic surgery in Turkey, Therefore, we provide diffrent implantation systems ( all on 4, all on 6 , all on 8, dentures...) preformed by expert oral surgeon with worlwide brands (Straumann, Hiossen...) and the latest technologies and equipment for you.
+                    p &nbsp;
+                    h1
+                        strong
+                            span(style='font-family:Georgia,serif') Porcelain &amp; Laminate :
+                    h1
+                        span(style='font-family:Georgia,serif')
+                            img(alt='dental Porcelain & Laminate' src='./img/6546464.webp' style='height:350px; width:350px')
+                        p
+                        span(style='font-family:Georgia,serif')
+                            | Dental porcelain laminates, also known as porcelain laminate veneers, are one of the go-to options for smile reconstruction. They are attached to the front surface of the teeth to improve their appearance.
+                        p &nbsp;
+                        p &nbsp;
+                    h1
+                        strong
+                            span(style='font-family:Georgia,serif') Zirconium Crowns :
+                        p
+                        img(alt='Zirconium Crowns' src='./img/6546464.webp' style='height:350px; width:350px')
+                        p
+                        span(style='font-family:Georgia,serif')
+                            | Zirconium crowns became popular among dental clinics for their versatility. It is known for its toughness and durability. Zirconium is a very strong and reliable substance that can withstand our everyday habits.
+                        p &nbsp;
+                    h1
+                        strong
+                            span(style='font-family:Georgia,serif') Other Dental Treatment :
+                        p
+                        strong
+                            span(style='font-family:Georgia,serif')
+                                img(alt='Other Dental Treatment ' src='./img/6546464.webp' style='height:350px; width:350px')
+                    p
+                        span(style='font-family:Georgia,serif')
+                            | We also provide other dental procedures such as teeth cleaning, teeth whitening, extraction, filling, root canal, braces and bonding
+                .justify-between.items-center(class='md:flex')
+                    // share buuton
+                    #st-1.sharethis-inline-share-buttons.mt-5.space-x-1.st-left.st-inline-share-buttons.st-animated
+                        .st-btn.st-first(data-network='facebook' style='display: inline-block;')
+                        .st-btn(data-network='twitter' style='display: inline-block;')
+                        .st-btn(data-network='pinterest' style='display: inline-block;')
+                        .st-btn(data-network='email' style='display: inline-block;')
+                        .st-btn.st-last(data-network='sharethis' style='display: inline-block;')

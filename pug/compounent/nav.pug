@@ -1,0 +1,65 @@
+div(class = "sticky  top-0 bg-[#131B39] shadow-lg p-2 flex justify-between items-center z-40")
+    div(class= "logo maxmd:order-1")
+        a(href="index.html") 
+            img(src="./img/cirta-care-01footer.webp" loading="lazy" alt="" width="300" height="300" class=" w-28 h-16 object-contain" )
+    div(class = "togle hidden cursor-pointer maxmd:block text-[#45a884] p-1") #[span(class = " icon-align-justify text-2xl	") ]
+    ul(class = "flex items-center maxmd:hidden")
+        li #[a(href="index.html" class ="mx-4 text-gray-400 hover:text-[#149ada] capitalize p-2 ") home]
+        li #[a(href="about.html" class ="mx-4 text-gray-400 hover:text-[#149ada] capitalize p-2") about]
+        li#dropdownDividerButtonx(data-dropdown-toggle='dropdownDivider' class='mx-4 cursor-pointer capitalize relative dowpdesktop flex items-center text-gray-400 hover:text-[#149ada] p-2' type='button')  service 
+            svg.w-4.h-4.ml-2(fill='none' stroke='currentColor' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7')
+            // Dropdown menu
+            #dropdownDivider.z-10.hidden.divide-y.divide-gray-100.rounded.shadow.w-44(class='dark:bg-gray-700 bg-[#149ada] absolute top-[50px] left-0 dark:divide-gray-600')
+                ul.py-1.text-sm.text-gray-700(class='dark:text-gray-200' aria-labelledby='dropdownDividerButton')
+                    li
+                        a.block.px-4.py-2(href='service.html' class='hover:bg-white text-white hover:text-[#149ada] dark:hover:bg-gray-600 dark:hover:text-white') Dental
+                    li
+                        a.block.px-4.py-2(href='service.html' class='hover:bg-white text-white hover:text-[#149ada] dark:hover:bg-gray-600 dark:hover:text-white') Plastic Surgery
+                    li
+                        a.block.px-4.py-2(href='service.html' class='hover:bg-white text-white hover:text-[#149ada] dark:hover:bg-gray-600 dark:hover:text-white') Hair Transplant
+        li #[a(href="contact.html" class ="mx-4 text-gray-400  hover:text-[#149ada] p-2 capitalize") contact]
+        li#dropdownDividerButtonx(data-dropdown-toggle='dropdownDivider' class='mx-4 cursor-pointer capitalize flex items-center text-gray-400 relative dowpdesktop hover:text-[#149ada] p-2' type='button')
+            | english 
+            svg.w-4.h-4.ml-2(fill='none' stroke='currentColor' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7')
+            // Dropdown menu
+            #dropdownDivider.z-10.hidden.divide-y.divide-gray-100.rounded.shadow.w-44(class='dark:bg-gray-700 bg-[#149ada] absolute top-[50px] left-0 dark:divide-gray-600')
+                ul.py-1.text-sm.text-gray-700(class='dark:text-gray-200' aria-labelledby='dropdownDividerButton')
+                    li
+                        a.block.px-4.py-2(href='#' class='hover:bg-white hover:text-[#149ada] text-white dark:hover:bg-gray-600 dark:hover:text-white') english
+                    li
+                        a.block.px-4.py-2(href='#' class='hover:bg-white hover:text-[#149ada] text-white dark:hover:bg-gray-600 dark:hover:text-white') ar
+
+        div(class = "flex items-center maxxl:hidden")
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-whatsapp") #[a(href="" class ="") ]] 
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-youtube") #[a(href="" class ="") ]] 
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-facebook") #[a(href="" class ="") ]] 
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-instagram") #[a(href="" class ="") ]] 
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-twitter") #[a(href="" class ="") ]] 
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-linkedin") #[a(href="" class ="") ]] 
+            div(class = "flex items-center text-black mx-2 justify-center rounded-full cursor-pointer w-7 h-7 bg-white") #[span(class = "icon-tiktok") #[a(href="" class ="") ]] 
+
+//- navMobile
+div(class ="nav-mobile bg-[#149ada]  fixed top-0 left-0 rtl:right-0 h-[100vh] w-56 hidden z-50")
+    div(class = "fixed -z-10 h-full w-full bg-[#00000030] left-0 top-0 overlay hidden")
+    div(class = "flex items-center justify-between bg-white p-2")
+        div(class ="text-2xl cursor-pointer close-mobile-nav") 
+            <span class="icon-close"></span>
+        .logo
+            img(src="./img/cirta-care-01footer.webp" loading="lazy" alt="" width="300" height="300" class="  w-16 h-16 " )
+    ul(class ="mobile-links mt-5 p-3")
+
+        li #[a(href="index.html" class ="p-2 block text-white hover:bg-white hover:text-[#149ada] capitalize  mb-2") home] 
+        li #[a(href="about.html" class ="p-2 block text-white hover:bg-white hover:text-[#149ada] capitalize  mb-2") about] 
+        li(class ="p-2 block drop-mobile  hover:bg-white text-white hover:text-[#149ada] capitalize  mb-2 relative cursor-pointer ") service #[span(class="icon-ctrl")]
+            ul(class ="  w-[93%] h-50 hidden left-2 bg-white")
+                li #[a(href="service.html" class = "block p-3 text-black  hover:bg-white hover:text-[#149ada]") Dental]
+                li #[a(href="service.html" class = "block p-3 text-black hover:bg-white hover:text-[#149ada]") Plastic Surgery]
+                li #[a(href="service.html" class = "block p-3 text-black hover:bg-white hover:text-[#149ada]") Hair Transplant]
+
+        li #[a(href="contact.html" class ="p-2 block text-white hover:bg-white hover:text-[#149ada] capitalize  mb-2") contact] 
+        li(class ="p-2 block drop-mobile  hover:bg-white text-white hover:text-[#149ada] capitalize  mb-2 relative cursor-pointer ") english #[span(class="icon-ctrl")]
+            ul(class ="  w-[93%] h-50 hidden left-2 bg-white")
+                li #[a(href="" class = "block p-3  text-black hover:bg-white hover:text-[#149ada]") ar]
+                li #[a(href="" class = "block p-3  text-black hover:bg-white hover:text-[#149ada]") english]

@@ -1,0 +1,36 @@
+doctype html
+html(lang="en" dir  = "ltr")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="home page")
+        title Home
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        link(rel="stylesheet", href="./icomoon/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+        <link rel="shortcut icon" href="#">
+        link(rel="stylesheet", href="./css/index.css")
+        link(rel="stylesheet", href="./dist/output.css")
+        link(rel="shortcut icon", href="./img/cirta-care-01footer.webp", type="image/x-icon")
+
+    body(style  = "overflow-x: hidden;" class ="bg-[#edf3f1]") 
+        include ./compounent/loead.pug
+        include ./compounent/nav.pug
+        include ./compounent/cover.pug
+        include ./compounent/cards.pug
+        include ./compounent/slider1.pug
+        include ./compounent/contact.pug
+        include ./compounent/videos.pug
+        include ./compounent/Success.pug
+        include ./compounent/footer.pug
+        include ./compounent/abov.pug
+        script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js") 
+        script(src = "./js/swiper.js")
+        script(src="./js/loead.js") 
+        script(src="./js/public.js") 
+        script(src="./js/animation.js") 
+        script(src="./js/handleselect.js") 

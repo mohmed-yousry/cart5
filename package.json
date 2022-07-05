@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "lazyframe": "^2.2.7"
+  }
+}
